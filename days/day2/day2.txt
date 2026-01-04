@@ -1,0 +1,144 @@
+⭐ DAY 2 — ARRAYS & ARRAY METHODS (Beginner Friendly)
+Today you will learn:
+What is an Array
+Why we need Arrays
+How to create Arrays
+Access values from Arrays
+Update values
+Important Array Methods
+push
+pop
+map
+filter
+Practice examples
+
+
+
+✅ 1. What is an Array? (Very Simple)
+An array is a list where you can store multiple values in one variable.
+❌ Without Array
+let student1 = "Rahul";
+let student2 = "Amit";
+let student3 = "Kaushal";
+
+
+
+✅ With Array
+let students = ["Rahul", "Amit", "Kaushal"];
+✔ One variable
+✔ Many values
+✔ Ordered list
+
+
+
+✅ 2. Why Arrays are Needed
+Store multiple items
+Loop through data
+Used everywhere (API data, users, products)
+Real-life example:
+let cartItems = ["Laptop", "Mouse", "Keyboard"];
+
+
+
+✅ 3. Create an Array
+let numbers = [10, 20, 30, 40];
+let cities = ["Agra", "Delhi", "Mumbai"];
+let mixed = [1, "Hello", true];
+
+
+
+✅ 4. Access Array Values (Index Concept)
+Arrays start from index 0
+let fruits = ["Apple", "Banana", "Mango"];
+
+console.log(fruits[0]); // Apple
+console.log(fruits[1]); // Banana
+console.log(fruits[2]); // Mango
+📌 Formula:
+arrayName[index]
+
+
+
+
+✅ 5. Update Array Value
+let fruits = ["Apple", "Banana", "Mango"];
+
+fruits[1] = "Orange";
+
+console.log(fruits);
+// ["Apple", "Orange", "Mango"]
+
+
+
+
+✅ 6. Array Length
+let fruits = ["Apple", "Banana", "Mango"];
+
+console.log(fruits.length); // 3
+⭐ IMPORTANT ARRAY METHODS
+
+
+
+✅ 7. push() — Add item at END
+let fruits = ["Apple", "Banana"];
+
+fruits.push("Mango");
+
+console.log(fruits);
+// ["Apple", "Banana", "Mango"]
+
+
+
+✅ 8. pop() — Remove item from END
+let fruits = ["Apple", "Banana", "Mango"];
+
+fruits.pop();
+
+console.log(fruits);
+// ["Apple", "Banana"]
+
+
+
+✅ 9. map() — Transform each item (IMPORTANT)
+👉 map() creates a new array
+Example: multiply each number by 2
+let numbers = [1, 2, 3];
+
+let result = numbers.map(function(num) {
+    return num * 2;
+});
+
+console.log(result);
+// [2, 4, 6]
+🧠 Think:
+"Do something to each item"
+
+
+
+✅ 10. filter() — Keep only matching items
+👉 filter() removes unwanted data
+Example: keep numbers greater than 18
+let ages = [10, 20, 25, 15];
+
+let adults = ages.filter(function(age) {
+    return age >= 18;
+});
+
+console.log(adults);
+// [20, 25]
+🧠 Think:
+
+"Filter means select"
+🔁 map vs filter (Very Important)
+Method	Purpose
+map	Change data
+filter	Select data
+
+
+⭐ Arrow Function (Simple Way)
+Same code shorter:
+let numbers = [1, 2, 3];
+
+let doubled = numbers.map(num => num * 2);
+
+console.log(doubled);
