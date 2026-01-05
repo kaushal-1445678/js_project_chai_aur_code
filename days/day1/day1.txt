@@ -1,0 +1,135 @@
+⭐ DAY 1 — JavaScript Basics (Beginner Level)
+
+
+
+Today you will learn:
+
+What is JavaScript
+Variables (let, const, var)
+Data types (number, string, boolean, etc.)
+Basic operations
+Functions
+10 simple practice examples
+
+
+✅ 1. What is JavaScript?
+JavaScript is a language that makes websites work.
+👉 HTML = structure
+👉 CSS = design
+👉 JavaScript = actions (dynamic behaviour)
+Example:
+Click a button → something happens
+Login → check username/password
+Add to cart
+All this is done using JavaScript.
+
+
+✅ 2. Variables (very simple explanation)
+A variable is like a container where you store your data.
+Example:
+Imagine a container named age where you store your age:
+let age = 25;
+
+
+3 types of variables:
+✔ let (most used)
+You can change its value later.
+let city = "Agra";
+city = "Delhi";  // allowed
+✔ const (value cannot change)
+const country = "India";
+country = "India"; // okay
+// country = "USA";  // ❌ NOT allowed
+✔ var (old method, we don’t use it today)
+var name = "Kaushal";
+👉 For now, always use let and const only.
+✅ 3. Data Types (very simple)
+
+✔ Number
+let age = 24;
+let price = 199.99;
+✔ String (text inside quotes)
+let name = "Rahul";
+let city = "Agra";
+✔ Boolean (true or false)
+let isMarried = false;
+let isDeveloper = true;
+✔ Undefined
+Variable created but no value given.
+let x;
+console.log(x);  // undefined
+✔ Null
+Empty value (we set it manually)
+let data = null;
+
+
+✅ 4. Basic Maths in JavaScript
+let a = 10;
+let b = 3;
+
+console.log(a + b);  // 13
+console.log(a - b);  // 7
+console.log(a * b);  // 30
+console.log(a / b);  // 3.33
+console.log(a % b);  // 1   (remainder)
+console.log(a ** b); // 1000 (power)
+
+
+✅ 5. Functions (very simple explanation)
+A function is like a machine.
+You give input → It gives output.
+Example:
+A function to add two numbers:
+function add(a, b) {
+    return a + b;
+}
+
+console.log(add(5, 3)); // 8
+Example with text:
+function greet(name) {
+    return "Hello " + name;
+}
+
+console.log(greet("Kaushal")); // Hello Kaushal
+
+
+⭐ Day 1 Practice Examples (very simple)
+Try to understand these:
+Example 1 — Store name
+let myName = "Kaushal";
+console.log(myName);
+Example 2 — Add two numbers
+let x = 12;
+let y = 8;
+console.log(x + y);  // 20
+Example 3 — Check age
+let age = 20;
+console.log(age >= 18); // true
+Example 4 — Change variable
+let city = "Agra";
+city = "Delhi";
+console.log(city);
+Example 5 — Constant example
+const country = "India";
+console.log(country);   // India
+Example 6 — Undefined
+let data;
+console.log(data);  // undefined
+Example 7 — Null
+let value = null;
+console.log(value);
+Example 8 — Function add
+function add(a, b) {
+  return a + b;
+}
+console.log(add(3, 4)); // 7
+Example 9 — Greeting
+function welcome(user) {
+  return "Welcome " + user;
+}
+console.log(welcome("Rahul"));
+Example 10 — Multiply
+function multiply(a, b) {
+  return a * b;
+}
+console.log(multiply(5, 6)); // 30

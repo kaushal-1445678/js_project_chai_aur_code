@@ -142,3 +142,48 @@ let numbers = [1, 2, 3];
 let doubled = numbers.map(num => num * 2);
 
 console.log(doubled);
+
+✅ reduce() — Combine all values into ONE (Simple)
+🧠 Think:
+reduce = “reduce many values into one value”
+Example: Add all numbers
+let numbers = [1, 2, 3, 4];
+
+let sum = numbers.reduce((total, num) => {
+  return total + num;
+}, 0);
+
+console.log(sum); // 10
+👉 Step by step:
+total starts from 0
+0 + 1 = 1
+1 + 2 = 3
+3 + 3 = 6
+6 + 4 = 10
+Real-life example (Cart total)
+let cart = [100, 200, 300];
+
+let totalPrice = cart.reduce((total, price) => total + price, 0);
+
+console.log(totalPrice); // 600
+✅ find() — Find FIRST matching item
+🧠 Think:
+filter = many results
+find = only ONE result
+let users = [
+  { name: "Rahul", age: 20 },
+  { name: "Amit", age: 25 }
+];
+
+let user = users.find(u => u.age > 21);
+
+console.log(user);
+// { name: "Amit", age: 25 }
+
+🎯 DAY 2 SUMMARY
+
+Method	Use
+map	        change each item
+filter	    select items
+reduce	    combine values
+find	    find one item
