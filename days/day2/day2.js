@@ -41,3 +41,6 @@ let users=[
 
 let user=users.find(u=>u.age >=21);
 console.log(user);
+
+
+
