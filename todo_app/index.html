@@ -1,3 +1,69 @@
-<input type="text" id="todoInput">
-<button onclick="addTodo()"> Add Todo</button>
-<ul id="todoList"></ul>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Todo App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- HEADER -->
+        <header class="header">
+            <h1>📝 My Todo App</h1>
+        </header>
+
+        <!-- INPUT SECTION -->
+        <section class="input-section">
+            <input 
+                type="text" 
+                id="todoInput" 
+                placeholder="Add a new task..."
+                autofocus
+            >
+            <button id="addBtn" class="btn-primary">Add Todo</button>
+        </section>
+
+        <!-- FILTER BUTTONS -->
+        <section class="filter-section">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="active">Active</button>
+            <button class="filter-btn" data-filter="completed">Completed</button>
+        </section>
+
+        <!-- STATS SECTION -->
+        <section class="stats-section">
+            <div class="stat">
+                <div class="stat-label">Total</div>
+                <div class="stat-count" id="totalCount">0</div>
+            </div>
+            <div class="stat">
+                <div class="stat-label">Active</div>
+                <div class="stat-count" id="activeCount">0</div>
+            </div>
+            <div class="stat">
+                <div class="stat-label">Completed</div>
+                <div class="stat-count" id="completedCount">0</div>
+            </div>
+            <button id="clearCompletedBtn" class="btn-primary" disabled>
+                Clear Completed
+            </button>
+        </section>
+
+        <!-- EMPTY STATE -->
+        <div id="emptyState" style="display: none;">
+            <p>✨ No todos yet! Add one to get started.</p>
+        </div>
+
+        <!-- TODOS LIST -->
+        <ul id="todoList">
+            <!-- Todos appear here -->
+        </ul>
+    </div>
+
+    <!-- SCRIPTS - Load in this order! -->
+    <script src="types.js"></script>
+    <script src="todoManager.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
